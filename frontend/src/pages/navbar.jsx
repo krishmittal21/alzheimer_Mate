@@ -1,25 +1,18 @@
 import React, { useState } from "react";
-import { Cross as Hamburger } from 'hamburger-react';
 import "../App.css";
 
 const Navbar = () => {
-  const [isOpen, setOpen] = useState(false);
 
   return (
-    <nav style={{ backgroundColor: "#ffcad4" }}>
-      <div className="flex justify-between items-center p-5">
-        {/*<Hamburger
-          toggled={isOpen}
-          toggle={setOpen}
-          className="text-3xl"
-          color="#a73439"
-        />*/}
-        <button
-          className="py-2.5 px-5 text-sm font-medium text-[#a73439]  ">
-          Upload Image
-        </button>
-      </div>
+    <nav>
+    <div class="flex items-center justify-between flex-wrap bg-green-500 p-6">
+      <h1 className='text-xl '>Alzheimer Diagnosis</h1>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        upload image
+      </button>
+    </div>
     </nav>
+    
   );
 };
 
